@@ -1,0 +1,30 @@
+<%- include('sub/head.ejs') %>
+
+	<body>
+		<div class="container-fluid">
+			<%- include('sub/objectHeader.ejs') %>
+				<div class="text-center page-header container-fluid"
+					style="font-family:Times; background-color: #eeeeff">
+					<h1>
+						<%= object.objName %>
+					</h1>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-5">
+						<img src="./static/images/<%= object.image %>" alt="<%= object.objName %>"
+							class="center-block img-responsive img-thumbnail">
+					</div>
+					<div class="col-lg-8 col-md-7 col-sm-6">
+						<p class="text-justify">
+							<%= object.descr %>
+						</p>
+						<p>
+							Сучасна адреса: <%= object.curaddr %>
+						</p>
+					</div>
+				</div>
+		</div>
+	</body>
+
+	</html>
